@@ -1,0 +1,23 @@
+@use './variables' as *;
+
+
+body { 
+  font-family: $font-main;
+  margin: 0;
+  padding: 0;
+  color: $color-text;
+  background: $color-bg;
+  scroll-behavior: smooth; 
+  background-color: $color-main-bg;
+} 
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+section {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+}

@@ -1,0 +1,31 @@
+.under-development {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    padding: 2rem;
+    text-align: center;
+    background: linear-gradient(to top, #f1f5f9, #e2e8f0);
+    color: #0f172a;
+  
+    .content {
+      max-width: 600px;
+  
+      .icon {
+        font-size: 3rem;
+        color: #0ea5e9;
+        margin-bottom: 1rem;
+      }
+  
+      h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+  
+      p {
+        font-size: 1.1rem;
+        color: #475569;
+      }
+    }
+  }
+  

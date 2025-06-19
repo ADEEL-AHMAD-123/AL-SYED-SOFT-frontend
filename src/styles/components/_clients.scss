@@ -1,0 +1,39 @@
+@use '../variables' as *;
+@use 'sass:color';
+.clients {
+  text-align: center;
+  padding: 4rem 1.5rem;
+  background: $color-main-bg;
+
+  h2 {
+    font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 3rem;
+      color: #111;
+  }
+
+  .logo-strip {
+    display: grid;
+    gap: 2rem;
+    justify-content: center;
+
+    // Responsive grid layout
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+
+    @media (min-width: 1200px) {
+      grid-template-columns: repeat(6, 1fr); // 6 logos in a row on large screens
+    }
+
+    img {
+      height: 75px; // increased from 40px
+      max-width: 100%;
+      object-fit: contain;
+      opacity: 0.7;
+      transition: opacity 0.3s ease;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}

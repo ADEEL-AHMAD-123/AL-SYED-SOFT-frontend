@@ -1,0 +1,72 @@
+@use '../variables' as *;
+@use 'sass:color';
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: $color-main-bg;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: $color-text;
+    text-decoration: none;
+  }
+
+  .nav {
+    display: flex;
+    gap: 2rem;
+
+    a {
+      color: $color-text;
+      text-decoration: none;
+      font-weight: 500;
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        height: 2px;
+        width: 0%;
+        background-color: $color-primary;
+        transition: 0.3s ease;
+      }
+
+      &:hover::after,
+      &.active::after {
+        width: 100%;
+      }
+    }
+  }
+
+  .talk-btn {
+    background: $color-primary;
+    color: #fff;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.3s ease;
+
+    &:hover {
+      background: color.adjust($color-primary, $lightness: -10%);
+
+
+
+ 
+    }
+  }
+}
