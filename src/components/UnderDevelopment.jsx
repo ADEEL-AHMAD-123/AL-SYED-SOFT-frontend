@@ -9,7 +9,7 @@ const UnderDevelopment = () => {
         <FaTools className="icon" />
         <h2>We're Working on It!</h2>
         <p>This section is currently under development. Check back soon for updates!</p>
-      </div>
+      </div> 
     </section>
   );
 };

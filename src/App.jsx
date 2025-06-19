@@ -7,7 +7,7 @@ import Contact from './pages/Contact';
 
 const App = () => {
   return (
-    <Router>
+    <Router basename="/AL-SYED-SOFT-frontend">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<Products />} />
